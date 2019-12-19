@@ -1,7 +1,20 @@
-server:
-  port: 9000
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    info:
+      enabled: true
+    metrics:
+      enabled: true
+    health:
+      enabled: true
 
 logging:
-  level:
-    com:
-      yuns: DEBUG
+    level:
+        com:
+            yuns: DEBUG
+server:
+    port: 9000
