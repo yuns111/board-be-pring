@@ -13,8 +13,12 @@ management:
       enabled: true
 
 logging:
-    level:
-        com:
-            yuns: DEBUG
+  level:
+    io:
+      netty: DEBUG
+      reactor: DEBUG
+      com:
+        yuns: DEBUG
+
 server:
-    port: 9000
+  port: 9000

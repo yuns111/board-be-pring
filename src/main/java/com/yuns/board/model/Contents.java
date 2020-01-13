@@ -9,7 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Document
+@Document(collection = "contentsList")
 @NoArgsConstructor
 public class Contents {
 	@Id
